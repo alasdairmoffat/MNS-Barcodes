@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>MNS Barcodes</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="animated form-page">
+      <form action="">
+        <div class="id-input">
+          <label for="staffID">Staff ID</label>
+          <input type="number" name="" id="staffID">
+        </div>
+        <button type="submit" id="submitButton" class="btn">Show Barcodes <i class="fa fa-chevron-right"></i></button>
+      </form>
+      <div class="alert alert-danger hide"></div>
+    </div>
+
+    <div class="barcodes-page animated hidden">
+      <div class="barcode-buttons">
+        <button class="btn" id="back-button"><i class="fa fa-chevron-left"></i> Back</button>
+        <button class="btn btn-print" id="print-button"><i class="fa fa-print"></i> Print</button>
+      </div>
+      <div class="barcodes">
+        <svg id="idBarcode"></svg>
+        <svg id="emailBarcode"></svg>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/JsBarcode.all.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
