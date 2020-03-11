@@ -33,8 +33,8 @@ function verifyInput(input) {
 }
 
 function generateBarcodes(staffID) {
-  JsBarcode('#idBarcode', staffID, { width: 4 });
-  JsBarcode('#emailBarcode', staffID + '@mnscorp.net');
+  JsBarcode('#id-barcode', staffID, { width: 3 });
+  JsBarcode('#email-barcode', staffID + '@mnscorp.net');
 }
 
 function runAnimation() {

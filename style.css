@@ -143,21 +143,29 @@ svg {
 
 @media print {
   @page {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 20mm;
   }
 
   .barcode-buttons {
     display: none;
   }
 
-  svg {
-    margin: 0;
-  }
-
   .barcodes {
     border: dashed 1px #000;
     width: 80mm;
     height: 50mm;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  svg {
+    margin: 0;
+    /* height: 16mm; */
+  }
+  svg#id-barcode {
+    width: 26mm;
+  }
+  svg#email-barcode {
+    width: 42mm;
   }
 }
